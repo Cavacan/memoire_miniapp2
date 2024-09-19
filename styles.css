@@ -1,0 +1,23 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+}
+
+/* シャボン玉の基本スタイル */
+.bubble {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(173, 216, 230, 0.6); /* 半透明の水色 */
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* ホバー時のアニメーション */
+}
+
+/* ホバー時に2倍に拡大 */
+.bubble:hover {
+  transform: scale(2); /* 2倍に拡大 */
+}
