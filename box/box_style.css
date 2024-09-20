@@ -32,7 +32,7 @@
   transition: transform 0.3s ease;
 }
 
-/* クリック後のアニメーション用クラス */
+/* クリックアニメーション用クラス */
 .rectA.animate {
   animation: openBoxTop 2s forwards ease-in-out;
 }
@@ -41,41 +41,48 @@
   animation: openBoxBottom 2s forwards ease-in-out;
 }
 
-/* A（フタ）が上に移動しながら広がるアニメーション */
 @keyframes openBoxTop {
   0% {
     top: 100px;
     width: 300px;
     clip-path: polygon(50px 0px, 0px 135px, 300px 135px, 250px 0px);
   }
+  50% {
+    top: 0px;
+    width: 100%;
+    left: 0;
+    clip-path: polygon(50px 0px, 0px 100%, 500px 100%, 450px 0px);
+  }
   100% {
-    top: -200px; /* 画面外に移動 */
-    width: 100%; /* 画面幅いっぱいに広がる */
-    left: 0; /* 左端に合わせる */
-    clip-path: polygon(50px 0px, 0px 100%, 100% 100%, 250px 0px);
+    top: -235px;
+    width: 100%;
+    left: -20px;
+    clip-path: polygon(50px 0px, 0px 100%, 500px 100%, 450px 0px);
   }
 }
 
-/* B（箱）が下に移動しながら広がるアニメーション */
 @keyframes openBoxBottom {
   0% {
     top: 250px;
     width: 300px;
   }
+  50% {
+    top: 70%;
+    width: 100%;
+    left: 0;
+  }
   100% {
-    top: 100%; /* 画面外に移動 */
-    width: 100%; /* 画面幅いっぱいに広がる */
-    left: 0; /* 左端に合わせる */
+    top: 100%;
+    width: 100%;
+    left: 0;
   }
 }
 
-
-/* areaCにホバーされた時に、四角形AとBが上下に動く */
 .areaC:hover .rectA {
-  transform: translateY(-50px); /* 四角形Aを上に50px移動 */
+  transform: translateY(-50px);
 }
 
 .areaC:hover .rectB {
-  transform: translateY(30px); /* 四角形Bを下に30px移動 */
+  transform: translateY(30px);
 }
 
