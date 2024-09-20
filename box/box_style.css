@@ -3,39 +3,72 @@
   position: relative;
   width: 500px;
   height: 500px;
-  background-color: #f0f0f0;  /* 背景色 */
+  background-color: #f0f0f0;
   border: 1px solid black;
-  transition: all 0.3s ease; /* ホバー時の変化に対するスムーズなアニメーション */
+  overflow: hidden; /* AとBが画面外に出るアニメーションで必要 */
+  cursor: pointer;
 }
 
-/* 四角形Aのスタイル */
+/* 台形Aのスタイル */
 .rectA {
   position: absolute;
   top: 100px;
-  left: 80px;
+  left: 100px;
   width: 300px;
   height: 135px;
-  clip-path: polygon(
-    50px 0px,   /* 頂点1 */
-    0px 135px,  /* 頂点2 */
-    300px 135px, /* 頂点3 */
-    250px 0px    /* 頂点4 */
-  );
   background-color: rgba(255, 0, 0, 0.5);
-  transition: transform 0.3s ease; /* ホバー時の移動アニメーション */
+  clip-path: polygon(50px 0px, 0px 135px, 300px 135px, 250px 0px);
+  transition: transform 0.3s ease;
 }
 
 /* 四角形Bのスタイル */
 .rectB {
   position: absolute;
   top: 250px;
-  left: 80px;
+  left: 100px;
   width: 300px;
   height: 150px;
-  
   background-color: rgba(0, 0, 255, 0.5);
-  transition: transform 0.3s ease; /* ホバー時の移動アニメーション */
+  transition: transform 0.3s ease;
 }
+
+/* クリック後のアニメーション用クラス */
+.rectA.animate {
+  animation: openBoxTop 2s forwards ease-in-out;
+}
+
+.rectB.animate {
+  animation: openBoxBottom 2s forwards ease-in-out;
+}
+
+/* A（フタ）が上に移動しながら広がるアニメーション */
+@keyframes openBoxTop {
+  0% {
+    top: 100px;
+    width: 300px;
+    clip-path: polygon(50px 0px, 0px 135px, 300px 135px, 250px 0px);
+  }
+  100% {
+    top: -200px; /* 画面外に移動 */
+    width: 100%; /* 画面幅いっぱいに広がる */
+    left: 0; /* 左端に合わせる */
+    clip-path: polygon(50px 0px, 0px 100%, 100% 100%, 250px 0px);
+  }
+}
+
+/* B（箱）が下に移動しながら広がるアニメーション */
+@keyframes openBoxBottom {
+  0% {
+    top: 250px;
+    width: 300px;
+  }
+  100% {
+    top: 100%; /* 画面外に移動 */
+    width: 100%; /* 画面幅いっぱいに広がる */
+    left: 0; /* 左端に合わせる */
+  }
+}
+
 
 /* areaCにホバーされた時に、四角形AとBが上下に動く */
 .areaC:hover .rectA {
@@ -45,3 +78,4 @@
 .areaC:hover .rectB {
   transform: translateY(30px); /* 四角形Bを下に30px移動 */
 }
+
