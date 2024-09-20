@@ -1,0 +1,47 @@
+/* コンテナ（ホバー領域を含む）のスタイル */
+.areaC {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: #f0f0f0;  /* 背景色 */
+  border: 1px solid black;
+  transition: all 0.3s ease; /* ホバー時の変化に対するスムーズなアニメーション */
+}
+
+/* 四角形Aのスタイル */
+.rectA {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 300px;
+  height: 135px;
+  clip-path: polygon(
+    50px 0px,   /* 頂点1 */
+    0px 135px,  /* 頂点2 */
+    300px 135px, /* 頂点3 */
+    250px 0px    /* 頂点4 */
+  );
+  background-color: rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s ease; /* ホバー時の移動アニメーション */
+}
+
+/* 四角形Bのスタイル */
+.rectB {
+  position: absolute;
+  top: 250px;
+  left: 80px;
+  width: 300px;
+  height: 150px;
+  
+  background-color: rgba(0, 0, 255, 0.5);
+  transition: transform 0.3s ease; /* ホバー時の移動アニメーション */
+}
+
+/* areaCにホバーされた時に、四角形AとBが上下に動く */
+.areaC:hover .rectA {
+  transform: translateY(-50px); /* 四角形Aを上に50px移動 */
+}
+
+.areaC:hover .rectB {
+  transform: translateY(30px); /* 四角形Bを下に30px移動 */
+}

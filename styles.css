@@ -15,9 +15,26 @@ body, html {
   background-color: rgba(173, 216, 230, 0.6); /* 半透明の水色 */
   border-radius: 50%;
   transition: transform 0.3s ease; /* ホバー時のアニメーション */
+  animation: seBalancer 3s infinite ease-in-out;
 }
 
-/* ホバー時に2倍に拡大 */
+/* ホバー時に2倍に拡大し、アニメーションを一時停止 */
 .bubble:hover {
-  transform: scale(2); /* 2倍に拡大 */
+  animation: seBalancer_hover 1s ease-in-out;
+}
+
+/* 上下に揺れるアニメーション */
+@keyframes seBalancer {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes seBalancer_hover {
+  100% {
+    transform: scale(2);
+  }
 }
