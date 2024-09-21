@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(108, 184, 255);
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
+  transform: translateY(100vh); /* 画面下の外部に初期位置を設定 */
+  transition: transform 2.5s ease, opacity 1s ease; /* 1秒間のアニメーション */
+  opacity: 0; /* フェードインのために初期値は透明に */
+}
+
+#circle {
+  border-radius: 50%;
+  left: 400px;
+}
+
+#circle2 {
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* 上下に揺れるアニメーション */
+@keyframes seBalancer {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px);
+  }
+}
