@@ -1,15 +1,13 @@
 const areaC = document.querySelector('.areaC');
-const rectA = document.querySelector('.rectA');
-const rectB = document.querySelector('.rectB');
+const boxA = document.querySelector('.boxA');
+const boxB = document.querySelector('.boxB');
 
 areaC.addEventListener('click', () => {
-    // AとBのアニメーションクラスを追加
-    rectA.classList.add('animate');
-    rectB.classList.add('animate');
+    boxA.classList.add('animate');
+    boxB.classList.add('animate');
     
-    // アニメーション終了後に画面遷移をする例（任意の処理をここに追加）
     setTimeout(() => {
         // console.log('画面遷移へ');
-        window.location.href = "<%= image_index_path %>";
-    }, 2000); // アニメーションの時間に合わせて設定
+        window.location.href = areaC.getAttribute('data-url');
+    }, 2000);
 });

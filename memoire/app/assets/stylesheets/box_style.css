@@ -1,4 +1,4 @@
-/* コンテナ（ホバー領域を含む）のスタイル */
+/* 枠 */
 .areaC {
   position: absolute;
   top: 50%;
@@ -8,41 +8,46 @@
   height: 500px;
   background-color: #d7e5ff93;
   border: 1px solid rgb(21, 0, 160);
-  overflow: hidden; /* AとBが画面外に出るアニメーションで必要 */
+  overflow: hidden;
   cursor: pointer;
 }
 
-/* 台形Aのスタイル */
-.rectA {
+/* 箱のふた */
+.boxA {
   position: absolute;
   top: 100px;
   left: 100px;
   width: 300px;
   height: 135px;
   background-color: rgb(237, 74, 74);
-  clip-path: inset(0px 0px round 70px 70px 0 0);
+  box-sizing: border-box;
+  border-radius: 60px 60px 0 0;
+  box-shadow:
+    0 0 0 8px #ffbc5d,
+    inset 0 0 0 8px rgba(255, 255, 255, 0);
   transition: transform 0.3s ease;
 }
 
-/* 四角形Bのスタイル */
-.rectB {
+/* 箱の本体 */
+.boxB {
   position: absolute;
   top: 250px;
   left: 100px;
   width: 300px;
-  height: 150px;
+  height: 140px;
   background-color: rgb(237, 74, 74);
-  border: 8px solid #ffbc5d;
   box-sizing: border-box;
+  box-shadow:
+    0 0 0 8px #ffbc5d,
+    inset 0 0 0 8px rgba(255, 255, 255, 0);
   transition: transform 0.3s ease;
 }
 
-/* クリックアニメーション用クラス */
-.rectA.animate {
+.boxA.animate {
   animation: openBoxTop 2s forwards ease-in-out;
 }
 
-.rectB.animate {
+.boxB.animate {
   animation: openBoxBottom 2s forwards ease-in-out;
 }
 
@@ -50,19 +55,28 @@
   0% {
     top: 100px;
     width: 300px;
-    clip-path: inset(0px 0px round 70px 70px 0 0);
-  }
+    border-radius: 60px 60px 0 0;
+    box-shadow:
+      0 0 0 8px #ffbc5d,
+      inset 0 0 0 8px rgba(255, 255, 255, 0);
+    }
   50% {
     top: 0px;
     width: 100%;
     left: 0;
-    clip-path: inset(0px 0px round 70px 70px 0 0);
-  }
+    border-radius: 60px 60px 0 0;
+    box-shadow:
+      0 0 0 8px #ffbc5d,
+      inset 0 0 0 8px rgba(255, 255, 255, 0);
+    }
   100% {
     top: -235px;
     width: 100%;
     left: -20px;
-    clip-path: inset(0px 0px round 0px 0px 0 0);
+    border-radius: 0 0 0 0;
+    box-shadow:
+      0 0 0 8px #ffbc5d,
+      inset 0 0 0 8px rgba(255, 255, 255, 0);
   }
 }
 
@@ -72,7 +86,7 @@
     width: 300px;
   }
   50% {
-    top: 70%;
+    top: 75%;
     width: 100%;
     left: 0;
   }
@@ -83,11 +97,11 @@
   }
 }
 
-.areaC:hover .rectA {
+.areaC:hover .boxA {
   transform: translateY(-50px);
 }
 
-.areaC:hover .rectB {
+.areaC:hover .boxB {
   transform: translateY(30px);
 }
 

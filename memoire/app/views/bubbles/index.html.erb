@@ -3,11 +3,15 @@
 <h1>思い出バブル</h1>
 
 <div id="bubbles">
-  <% @bubbles.each do |bubble| %>
-    <%= render bubble %>
-    <p>
-      <%= link_to "思い出を見る", bubble %>
-    </p>
+  <% if @bubbles.any? %>
+    <% @bubbles.each do |bubble| %>
+      <%= render bubble %>
+      <p>
+        <%= link_to "思い出を見る", bubble %>
+      </p>
+    <% end %>
+  <% else %>
+    <p>これからたくさん思い出を作っていきましょう。</p>
   <% end %>
 </div>
 
