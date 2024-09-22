@@ -1,6 +1,7 @@
 /memoire/tmp/cache/bootsnap/
 /memoire/tmp/cache/assets/
 /memoire/log/
+memoire/log/development.log
 /memoire/node_modules/
 /memoire/vendor/bundle/
 /memoire/public/assets/
