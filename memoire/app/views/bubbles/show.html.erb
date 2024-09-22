@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bubble %>
+
+<div>
+  <%= link_to "Edit this bubble", edit_bubble_path(@bubble) %> |
+  <%= link_to "Back to bubbles", bubbles_path %>
+
+  <%= button_to "Destroy this bubble", @bubble, method: :delete %>
+</div>
