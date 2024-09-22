@@ -1,0 +1,8 @@
+/memoire/tmp/cache/bootsnap/
+/memoire/tmp/cache/assets/
+/memoire/log/
+/memoire/node_modules/
+/memoire/vendor/bundle/
+/memoire/public/assets/
+/memoire/public/packs/
+/memoire/.byebug_history

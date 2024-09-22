@@ -33,6 +33,7 @@
   height: 150px;
   background-color: rgb(237, 74, 74);
   border: 8px solid #ffbc5d;
+  box-sizing: border-box;
   transition: transform 0.3s ease;
 }
 
