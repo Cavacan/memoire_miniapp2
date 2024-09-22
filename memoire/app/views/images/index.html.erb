@@ -1,0 +1,6 @@
+<h1>思い出バブル</h1>
+
+<% @bubbles.each do |bubble| %>
+  <%= render partial: "bubbles/bubble", locals: {bubble: bubble} %>
+<% end %>
+

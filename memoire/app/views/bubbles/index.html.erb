@@ -1,12 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Bubbles</h1>
+<h1>思い出バブル</h1>
 
 <div id="bubbles">
   <% @bubbles.each do |bubble| %>
     <%= render bubble %>
     <p>
-      <%= link_to "Show this bubble", bubble %>
+      <%= link_to "思い出を見る", bubble %>
     </p>
   <% end %>
 </div>

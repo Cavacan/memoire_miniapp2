@@ -9,7 +9,7 @@ areaC.addEventListener('click', () => {
     
     // アニメーション終了後に画面遷移をする例（任意の処理をここに追加）
     setTimeout(() => {
-        // 画面遷移の処理をここに追加する (例: location.href = 'nextpage.html';)
-        console.log('画面遷移へ');
+        // console.log('画面遷移へ');
+        window.location.href = "<%= image_index_path %>";
     }, 2000); // アニメーションの時間に合わせて設定
 });

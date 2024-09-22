@@ -91,3 +91,9 @@
   transform: translateY(30px);
 }
 
+.admin-bubbles {
+  position: absolute;
+  color: aquamarine;
+  top: 95%;
+  left: 95%;
+}

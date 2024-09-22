@@ -163,3 +163,289 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2419)
 
 
+Started GET "/" for ::1 at 2024-09-22 22:21:09 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 385)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 46621)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 50733)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:21:11 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 2286)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 2739)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:21:31 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 5326)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 5569)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:21:32 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2173)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2415)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:22:09 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 5318)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 5557)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:22:11 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2194)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 2433)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:22:30 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5342)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 5585)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:22:32 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2176)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2415)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:22:59 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 5307)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 5547)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:23:27 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 5320)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 5559)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:23:28 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2178)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2418)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:23:36 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5314)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5553)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:23:41 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5330)
+Completed 200 OK in 14ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 5569)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:23:45 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2197)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2436)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:23:46 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2198)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 2438)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:23:49 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2163)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2403)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:24:42 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 183)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 17839)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 18739)
+
+
+Started GET "/rails/info/routes" for ::1 at 2024-09-22 22:25:00 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/actionpack-7.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (Duration: 5.2ms | Allocations: 9511)
+  Rendered /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/actionpack-7.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.0ms | Allocations: 1093)
+  Rendered /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 10.6ms | Allocations: 14408)
+  Rendered layout /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/layouts/application.html.erb (Duration: 10.9ms | Allocations: 14674)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 15569)
+
+
+Started GET "/image/index" for ::1 at 2024-09-22 22:26:01 +0900
+Processing by ImageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering image/index.html.erb within layouts/application
+  Rendered image/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 95)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 17767)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 18667)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:26:48 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 170)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2371)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2818)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:26:49 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2203)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/bubbles" for ::1 at 2024-09-22 22:26:52 +0900
+Processing by BubblesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bubbles/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/bubbles/index.html.erb:6
+  Rendered bubbles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1512)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3360)
+Completed 200 OK in 37ms (Views: 3.9ms | ActiveRecord: 1.5ms | Allocations: 12480)
+
+
+Started GET "/bubbles/new" for ::1 at 2024-09-22 22:26:54 +0900
+Processing by BubblesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bubbles/new.html.erb within layouts/application
+  Rendered bubbles/_form.html.erb (Duration: 6.2ms | Allocations: 2273)
+  Rendered bubbles/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2551)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4362)
+Completed 200 OK in 25ms (Views: 10.5ms | ActiveRecord: 1.2ms | Allocations: 10231)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:34:13 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1788)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2692)
+
+
+  
+ActionView::Template::Error (undefined method `contnet_for?' for an instance of #<Class:0x0000000121fd2308>):
+    2: <html lang="ja">
+    3:   <head>
+    4:     <meta charset="UTF-8">
+    5:     <title><%= contnet_for?(:title) ? yield(:title) : "思い出" %></title>
+    6:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5
+Started GET "/" for ::1 at 2024-09-22 22:34:32 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 21003)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 21904)
+
+
+Started GET "/bubbles" for ::1 at 2024-09-22 22:34:38 +0900
+Processing by BubblesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering bubbles/index.html.erb within layouts/application
+  [1m[36mBubble Load (1.5ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/bubbles/index.html.erb:6
+  Rendered bubbles/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1303)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3132)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 2.3ms | Allocations: 4261)
+
+
+Started GET "/" for ::1 at 2024-09-22 22:37:02 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 18644)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms | Allocations: 18885)
+
+
+Started GET "/%3C%=%20image_index_path%20%%3E" for ::1 at 2024-09-22 22:37:05 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/%3C%=%20image_index_path%20%%3E"):
+  
+Started GET "/" for ::1 at 2024-09-22 22:41:53 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 19124)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 20023)
+
+
+Started GET "/rails/info/routes" for ::1 at 2024-09-22 22:41:56 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/actionpack-7.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (Duration: 7.1ms | Allocations: 9341)
+  Rendered /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/actionpack-7.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.0ms | Allocations: 666)
+  Rendered /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 13.3ms | Allocations: 13666)
+  Rendered layout /Users/cavacan/.rbenv/versions/3.3.1/lib/ruby/gems/3.3.0/gems/railties-7.1.4/lib/rails/templates/layouts/application.html.erb (Duration: 14.1ms | Allocations: 13927)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 14631)
+
+
