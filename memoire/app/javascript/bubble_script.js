@@ -146,15 +146,20 @@ function createEditWindow(bubbleData) {
 
 // fetchを使ってデータを更新
 function updateBubble(bubbleId, updateData) {
-  fetch('/bubbles/${bubbleId}', {
+  fetch(`/images/${bubbleId}`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
       'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
     },
-    body: JSON.stringify(updateData),
+    body: JSON.stringify({ bubble: updateData }),
   })
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
   .then(data => {
     const editWindow = document.querySelector('.edit-window');
     if (editWindow) {
@@ -215,19 +220,19 @@ function createBubbleWindow() {
     const title = createWindow.querySelector('input[name="title"]').value;
     const text = createWindow.querySelector('textarea[name="text"]').value;
 
-    createBubble( { title, text });
+    createBubble( { title, text } );
     createWindow.remove();
   });
 }
 
 function createBubble(newData) {
-  fetch('/bubbles', {
+  fetch(`/images`, {
     method: 'POST',
-    header: {
+    headers: {
       'Content-Type': 'application/json',
       'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
     },
-    body: JSON.stringify(newData),
+    body: JSON.stringify({ bubble: newData }),
   })
   .then(response => response.json())
   .then(data => {
