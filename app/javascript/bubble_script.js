@@ -65,9 +65,7 @@ export function renderNoBubble() {
   document.body.appendChild(startMemory);
 
   newBubbleButton();
-  const textWindow = document.createElement('div');
-  textWindow.id = "text-window"
-  document.body.appendChild(textWindow);
+  document.querySelector('#text-window').style.opacity = '1';
   createBubbleWindow();
 }
 
