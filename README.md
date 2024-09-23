@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+・これは何？
+　⇒　思い出を記録するアプリです。
+ 　JavaScriptを使って動きのあるアプリを目指しました。
 
-Things you may want to cover:
+・まず何をすれば良い？
+　⇒　特にありません。
+ 　※rails serverからlocalhost:3000でトップページへアクセスできます。
+  　デモ用データをseedに置いています。rails db:seedを実行して下さい。
 
-* Ruby version
+【操作説明】　
+・宝箱（？）　　　　クリックすると箱が開いて思い出が浮かんで来ます。
+・思い出の泡　　　　クリックすると下のボックスに内容が現れます。
+・テストボックス　　クリックすると編集画面に移ります。
+　　※未完成のため、改行コードを含むとエラーになります。
+・プラスの泡　　　　クリックすると新しい思い出を登録できます。
+　　※未完成のため、改行コードを含むとエラーになります。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
