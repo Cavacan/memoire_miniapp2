@@ -7,9 +7,12 @@
   <% content_for :title, "思い出の始まり" %>
 <% end %>
 
+<div id="text-window"></div>
+
 <script type="module">
-  import {renderBubbles, renderNoBubble} from "bubble_script";
-  const bubblesData = JSON.parse( '<%= raw @bubbles.to_json %>');
+  import { renderBubbles, renderNoBubble } from "bubble_script";
+  
+  const bubblesData = JSON.parse('<%= raw @bubbles.to_json %>');
 
   if (bubblesData.length > 0) {
     renderBubbles(bubblesData);

@@ -1850,3 +1850,10 @@ Completed 200 OK in 19ms (Views: 11.8ms | ActiveRecord: 4.0ms | Allocations: 654
   [1m[36mBubble Create (0.3ms)[0m  [1m[32mINSERT INTO "bubbles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["title", "Third Memory"], ["text", "This is the third memory."], ["created_at", "2024-09-22 22:37:54.326118"], ["updated_at", "2024-09-22 22:37:54.326118"]]
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles" WHERE "bubbles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBubble Update (1.2ms)[0m  [1m[33mUPDATE "bubbles" SET "text" = ?, "updated_at" = ? WHERE "bubbles"."id" = ?[0m  [["text", "This is the third memory. edited"], ["updated_at", "2024-09-23 10:39:05.103324"], ["id", 2]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles" WHERE "bubbles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
