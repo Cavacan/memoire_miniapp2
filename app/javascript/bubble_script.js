@@ -55,17 +55,7 @@ export function renderBubbles(bubblesData) {
       })
     });
 
-    // 思い出登録用bubble
-    const newBubbleElement = document.createElement('div');
-    newBubbleElement.classList.add('newBubble');
-    newBubbleElement.textContent = '+';
-    newBubbleElement.style.left = '90%';
-    newBubbleElement.style.top = '55%';
-    document.body.appendChild(newBubbleElement);
-
-    newBubbleElement.addEventListener('click', () => {
-      createBubbleWindow();
-    });
+    newBubbleButton();
   });
 }
 export function renderNoBubble() {
@@ -73,6 +63,12 @@ export function renderNoBubble() {
   startMemory.classList.add('no-memory');
   startMemory.innerHTML = "<p>これからたくさん思い出を作っていきましょう。</p>"
   document.body.appendChild(startMemory);
+
+  newBubbleButton();
+  const textWindow = document.createElement('div');
+  textWindow.id = "text-window"
+  document.body.appendChild(textWindow);
+  createBubbleWindow();
 }
 
 // 個別の上下動アニメーションを作成する関数
@@ -170,6 +166,20 @@ function updateBubble(bubbleId, updateData) {
   })
   .catch(error => {
     console.log('Error updating Memory: ', error);
+  });
+}
+
+// 思い出登録用bubbleボタン
+function newBubbleButton (){
+  const newBubble = document.createElement('div');
+  newBubble.classList.add('newBubble');
+  newBubble.textContent = '+';
+  newBubble.style.left = '90%';
+  newBubble.style.top = '55%';
+  document.body.appendChild(newBubble);
+
+  newBubble.addEventListener('click', () => {
+    createBubbleWindow();
   });
 }
 
