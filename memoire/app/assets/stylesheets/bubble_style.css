@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  width: 130px;
+  height: 110px;
+  text-align: center;
+  align-items: end;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  background-color: rgb(108, 184, 255);
+  border-radius: 50%;
+  transform: translateY(100vh);
+  transition: transform 2.5s ease, opacity 1s ease;
+  opacity: 0;
+}
+
+/* bubble上下動アニメーション */
+@keyframes seBalancer {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+#text-window {
+  position: absolute;
+  top: 65vh;
+  left: 5%;
+  width: 90%;
+  height: 30vh;
+  background-color: rgb(130, 178, 255);
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.no-memory {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  color: rgb(72, 0, 255);
+  animation: noMemoryAnimation 5s infinite ease-in-out;
+}
+
+@keyframes noMemoryAnimation {
+  5%, 95% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, calc(-50% - 80px));
+  }
+}

@@ -1,9 +1,21 @@
-<h1>思い出バブル</h1>
+<%= javascript_importmap_tags %>
+<%= stylesheet_link_tag "bubble_style", media: "all" %>
 
 <% if @bubbles.any? %>
-  <% @bubbles.each do |bubble| %>
-    <%= render partial: "bubbles/bubble", locals: {bubble: bubble} %>
-  <% end %>
+  <% content_for :title, "思い出バブル" %>
 <% else %>
-  <p>これからたくさん思い出を作っていきましょう。</p>
+  <% content_for :title, "思い出の始まり" %>
 <% end %>
+
+<div id="text-window"></div>
+
+<script type="module">
+  import {renderBubbles, renderNoBubble} from "bubble_script";
+  const bubblesData = JSON.parse( '<%= raw @bubbles.to_json %>');
+
+  if (bubblesData.length > 0) {
+    renderBubbles(bubblesData);
+  } else {
+    renderNoBubble();
+  }
+</script>

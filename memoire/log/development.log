@@ -963,3 +963,347 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.5ms | Allocations: 2791)
 
 
+<<<<<<< HEAD
+=======
+Started GET "/" for ::1 at 2024-09-23 06:59:31 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 61.0ms | Allocations: 49955)
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 53445)
+Completed 200 OK in 71ms (Views: 67.3ms | ActiveRecord: 0.0ms | Allocations: 57561)
+
+
+Started GET "/images" for ::1 at 2024-09-23 06:59:36 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3261)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3348)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 9350)
+
+
+  
+ActionView::Template::Error (The asset "all.css" is not present in the asset pipeline.
+):
+    1: <%= javascript_importmap_tags %>
+    2: <%= stylesheet_link_tag "fadein_style", media="all" %>
+    3: <script type="module">
+    4:   import {renderBubbles, renderNoBubble} from "fadein_script";
+    5:   const bubblesData = JSON.parse( '<%= raw @bubbles.to_json %>');
+  
+app/views/images/index.html.erb:2
+Started GET "/images" for ::1 at 2024-09-23 07:00:04 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.4ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 19258)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 21349)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 1.6ms | Allocations: 22837)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:01:17 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2579)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 6712)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.1ms | Allocations: 6970)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:01:28 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2556)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 6696)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 6946)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:02:45 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2572)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 6731)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms | Allocations: 6981)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:02:57 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2560)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 6692)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 6950)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:03:07 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2573)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 6737)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 6995)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:03:48 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2557)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 6704)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.2ms | Allocations: 6954)
+
+
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/images" for ::1 at 2024-09-23 07:06:19 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2560)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 6718)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.2ms | Allocations: 6968)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:07:45 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.8ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2560)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 6688)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.8ms | Allocations: 6938)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:11:49 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2560)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 6706)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.1ms | Allocations: 6956)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:12:25 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2567)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 6738)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms | Allocations: 6988)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:13:13 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2583)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 6739)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms | Allocations: 6989)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:13:29 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2553)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 6674)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.1ms | Allocations: 6924)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:13:30 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1328)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3183)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 3434)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:14:07 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2573)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 6726)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.1ms | Allocations: 6976)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:14:23 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2545)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 6734)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.1ms | Allocations: 6985)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:14:24 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3168)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 3419)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:14:39 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2553)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 6704)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.1ms | Allocations: 6954)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:14:40 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1328)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3194)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 3445)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:14:40 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3177)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 3427)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:14:59 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2554)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 6733)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.1ms | Allocations: 6983)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:15:49 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.2ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3195)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 3446)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:17:59 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.0ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 19172)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 21267)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 1.0ms | Allocations: 22753)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:18:33 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.0ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 19038)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 21133)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.8ms | Allocations: 22619)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:20:36 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Load (0.0ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:5
+  Rendered images/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 18952)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 21034)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 1.0ms | Allocations: 22514)
+
+
+Started GET "/" for ::1 at 2024-09-23 07:24:43 +0900
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+Importmap skipped missing path: fadein_script.js
+Importmap skipped missing path: fadein_script.js
+  Rendered home/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 44719)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 46915)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 47818)
+
+
+Started GET "/images" for ::1 at 2024-09-23 07:24:47 +0900
+Processing by ImagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mBubble Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "bubbles" LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/images/index.html.erb:4
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles"[0m
+  ↳ app/views/images/index.html.erb:12
+  Rendered images/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 3657)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5514)
+Completed 200 OK in 19ms (Views: 11.8ms | ActiveRecord: 4.0ms | Allocations: 6547)
+
+
+>>>>>>> c1881ff (add bubble fadein & noBubble)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBubble Create (2.0ms)[0m  [1m[32mINSERT INTO "bubbles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["title", "First Memory"], ["text", "This is the first memory."], ["created_at", "2024-09-22 22:37:54.322004"], ["updated_at", "2024-09-22 22:37:54.322004"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBubble Create (0.3ms)[0m  [1m[32mINSERT INTO "bubbles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["title", "Second Memory"], ["text", "This is the second memory."], ["created_at", "2024-09-22 22:37:54.325211"], ["updated_at", "2024-09-22 22:37:54.325211"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBubble Create (0.3ms)[0m  [1m[32mINSERT INTO "bubbles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["title", "Third Memory"], ["text", "This is the third memory."], ["created_at", "2024-09-22 22:37:54.326118"], ["updated_at", "2024-09-22 22:37:54.326118"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBubble Load (0.1ms)[0m  [1m[34mSELECT "bubbles".* FROM "bubbles" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
