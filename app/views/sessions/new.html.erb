@@ -1,0 +1,50 @@
+<h1>思い出の鍵を見つけて下さい。</h1>
+
+<% flash.each do |message_type, message| %>
+  <div class="flash-message <%= message_type %>"><%= message %></div>
+<% end %>
+
+<h2>鍵を持っていますか？</h2>
+<%= form_with url: login_path, local: true do |f| %>
+  <div class="login_form">
+    <%= f.label :email, "あなたは誰？" %>
+    <%= f.email_field :email, placeholder: "メールアドレス"  %>
+  </div>
+  
+  <div class="login_form">
+    <%= f.label :password, '鍵の名前' %>
+    <%= f.text_field :password, placeholder: "パスワード" %>
+  </div>
+
+  <div class="login_form">
+    <%= f.submit '鍵を取り出す' %>
+  </div>
+<% end %>
+
+<br>
+<br>
+<hr>
+<br>
+
+<h2>新しい鍵を作る</h2>
+<%= form_with model: @user, url: users_path, local: true do |f| %>
+
+  <div class="new_user">
+    <%= f.label :email, "あなたは誰？" %>
+    <%= f.email_field :email, placeholder: "メールアドレス" %>
+  </div>
+
+  <div class="new_user">
+    <%= f.label :password, '鍵の名前' %>
+    <%= f.password_field :password, placeholder: "パスワード" %>
+  </div>
+
+  <div class="new_user">
+    <%= f.label :password_confirmation, '鍵のスペア'  %>
+    <%= f.password_field :password_confirmation, placeholder: "パスワード(確認用)"  %>
+  </div>
+
+  <div class="new_user">
+    <%= f.submit '鍵を作る' %>
+  </div>
+<% end %>
