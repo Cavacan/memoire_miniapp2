@@ -248,7 +248,13 @@ function createBubble(newData) {
 
 function addNewBubbleToPage(bubbleData) {
   const textWindow = document.querySelector('#text-window');
-  let currentLeft = 80
+  let currentLeft = 80 + Math.floor(Math.random() * 1100);
+  console.log(currentLeft);
+
+  const noBubbleElement = document.querySelector('.no-bubble');
+  if (noBubbleElement) {
+    noBubbleElement.remove();
+  }
 
   const newBubbleElement = document.createElement('div');
   newBubbleElement.classList.add('bubble');

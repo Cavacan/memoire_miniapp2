@@ -2,7 +2,7 @@ class ImagesController < ApplicationController
   before_action :set_bubble, only: [:update]
 
   def index
-    @bubbles = Bubble.all
+    @bubbles = current_user.bubbles
   end
 
   def update
@@ -15,7 +15,7 @@ class ImagesController < ApplicationController
   end
 
   def create
-    @bubble = Bubble.new(bubble_params)
+    @bubble = current_user.bubbles.new(bubble_params)
     if @bubble.save
       render json: @bubble.as_json(only: [:id, :title, :text]).to_json, status: :created  # 作成されたバブルを返す
     else
@@ -26,7 +26,7 @@ class ImagesController < ApplicationController
   private
 
   def set_bubble
-    @bubble = Bubble.find(params[:id])
+    @bubble = current_user.bubbles.find(params[:id])
   end
 
   def bubble_params

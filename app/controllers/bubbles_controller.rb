@@ -3,7 +3,7 @@ class BubblesController < ApplicationController
 
   # GET /bubbles or /bubbles.json
   def index
-    @bubbles = Bubble.all
+    @bubbles = current_user.bubbles
   end
 
   # GET /bubbles/1 or /bubbles/1.json
@@ -14,15 +14,11 @@ class BubblesController < ApplicationController
   def new
     @bubble = Bubble.new
   end
-
-  # GET /bubbles/1/edit
-  def edit
-  end
-
+  
   # POST /bubbles or /bubbles.json
   def create
-    @bubble = Bubble.new(bubble_params)
-
+    @bubble = current_user.bubbles.new(bubble_params)
+    
     respond_to do |format|
       if @bubble.save
         format.html { redirect_to @bubble, notice: "Bubble was successfully created." }
@@ -33,7 +29,11 @@ class BubblesController < ApplicationController
       end
     end
   end
-
+  
+    # GET /bubbles/1/edit
+    def edit
+    end
+  
   # PATCH/PUT /bubbles/1 or /bubbles/1.json
   def update
     respond_to do |format|
@@ -60,7 +60,7 @@ class BubblesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_bubble
-      @bubble = Bubble.find(params[:id])
+      @bubble = current_user.bubbles.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
